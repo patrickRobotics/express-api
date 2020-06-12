@@ -4,31 +4,12 @@ const router = express.Router();
 
 const fs = require("fs");
 
-const dataPath = "./users.json";
+const dataPath = "./data/users.json";
 
-router.get("/users", (req, res, next) => {
-  fs.readFile(dataPath, "utf8", (err, data) => {
-    if (err) {
-      throw err;
-    }
-    res.send(JSON.parse(data));
-  });
-});
+const userCtrl = require("../controllers/users");
 
-router.get("/users/:id", (req, res, next) => {
-  const userId = Number(req.params.id);
-  fs.readFile(dataPath, "utf8", (err, data) => {
-    if (err) {
-      throw err;
-    }
-    const users = JSON.parse(data);
-    const user = users.find(user => user.id === userId);
-    if (!user) {
-      res.status(500).send("Account not found.");
-    } else {
-      res.send(user);
-    }
-  });
-});
+router.get("/users", userCtrl.getUsers);
+
+router.get("/users/:id", userCtrl.getUser);
 
 module.exports = router;
