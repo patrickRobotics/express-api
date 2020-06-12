@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Patrick Irungu",
+    "nickname": "PatrickPIN",
+    "email": "sample@email.com",
+    "id": 1
+  },
+  {
+    "name": "John Mwaura",
+    "nickname": "arthur",
+    "email": "jm@email.com",
+    "id": 2
+  },
+  {
+    "name": "Fredrick Okaka",
+    "nickname": "fredie",
+    "email": "fred@email.com",
+    "id": 3
+  }
+]

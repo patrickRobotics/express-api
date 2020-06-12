@@ -1,0 +1,21 @@
+{
+  "name": "express-rest-api",
+  "version": "1.0.0",
+  "description": "The API allows user to fetch a list of users from the json file. The API allows a user to fetch a specific user from the JSON file.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/makinhs/rest-api-tutorial.git"
+  },
+  "author": "patrick irungu",
+  "license": "ISC",
+  "homepage": "https://github.com/makinhs/rest-api-tutorial#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.8.7"
+  }
+}
