@@ -1,4 +1,7 @@
-## REST API in ExpressJS 
+## REST API in ExpressJS
+
+Find a running version of the rest API on repl.it:
+https://Express-API--patrickirungu.repl.co
 
 You will create a RESTful API for an online recipe app using Express and Node. 
 Your Express app will be served up by a Node server running on port 3000, and it will be reading a json file containing a list of users. 
