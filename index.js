@@ -1,6 +1,5 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const fs = require("fs");
 
 const userRoutes = require("./routes/users");
 
@@ -15,7 +14,7 @@ app.listen(3000, () => {
 
 app.get("/", (req, res) => {
   res.send(
-    "This is a simple ExpressJS app with a REST API endpoint - test with /users and /users/id"
+    "This is a simple ExpressJS app with a REST API endpoint - test with api/v1/users and api/v1/users/[id]"
   );
 });
 
